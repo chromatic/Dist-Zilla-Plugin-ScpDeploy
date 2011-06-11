@@ -1,7 +1,7 @@
 package Dist::Zilla::Plugin::ScpDeploy;
 # ABSTRACT: deploy via scp and ssh
 
-use Moose;
+use Moose 2.0007;
 use Moose::Util::TypeConstraints;
 
 use warnings;
