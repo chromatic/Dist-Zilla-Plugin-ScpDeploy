@@ -5,13 +5,15 @@ use Moose 2.0007;
 use Moose::Util::TypeConstraints;
 
 use namespace::autoclean;
+use constant HOSTSTYPE => __PACKAGE__ . '::Types::Hosts';
 
 with 'Dist::Zilla::Role::Releaser';
 
-coerce 'ArrayRef[Str]', from 'Str', via { [ split /,\s*/, $_ ] };
+subtype HOSTSTYPE, as 'ArrayRef[Str]';
+coerce  HOSTSTYPE, from 'Str', via { [ split /,\s*/, $_ ] };
 
-has [qw( remote_dir command )],      is => 'ro', required => 1;
-has 'hosts', isa => 'ArrayRef[Str]', is => 'ro', required => 1, coerce => 1;
+has [qw( remote_dir command )], is => 'ro', required => 1;
+has 'hosts', isa => HOSTSTYPE,  is => 'ro', required => 1, coerce => 1;
 
 sub release
 {
