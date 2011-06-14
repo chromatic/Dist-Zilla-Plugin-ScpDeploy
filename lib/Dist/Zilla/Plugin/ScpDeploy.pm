@@ -4,7 +4,6 @@ package Dist::Zilla::Plugin::ScpDeploy;
 use Moose 2.0007;
 use Moose::Util::TypeConstraints;
 
-use warnings;
 use namespace::autoclean;
 
 with 'Dist::Zilla::Role::Releaser';
