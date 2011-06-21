@@ -32,7 +32,7 @@ __PACKAGE__->meta->make_immutable;
 
 =head1 DESCRIPTION
 
-This plugin can automatically deploy a release when you run C<dist release>. It
+This plugin can automatically deploy a release when you run C<dzil release>. It
 performs two actions for you:
 
 =over 4

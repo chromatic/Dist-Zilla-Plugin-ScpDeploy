@@ -1,4 +1,5 @@
 {{$NEXT}}
+    - fixed documentation typo (Caleb Cushing, GH #1)
 
 1.20110614 2011-06-14 16:04:43 America/Los_Angeles
     - fixed type coercion errors, with help from #moose
