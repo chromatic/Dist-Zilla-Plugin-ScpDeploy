@@ -1,4 +1,5 @@
 {{$NEXT}}
+    - fixed typo (Alex Hartmaier, RT #69074)
 
 1.20110621 2011-06-21 08:02:00 America/Los_Angeles
     - fixed documentation typo (Caleb Cushing, GH #1)

@@ -61,4 +61,4 @@ to configure the remote hosts such that the remote directory and the remote
 command to run are available.
 
 The remote command receives one argument: the path to the release tarball in
-the give remote directory.
+the given remote directory.
